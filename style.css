@@ -212,29 +212,33 @@ h1 { font-size: 6rem; font-weight: 800; line-height: 0.85; margin: 25px 0; lette
     .hero-text p { font-size: 1rem; margin-bottom: 20px; }
     .btn-secondary { display: none; } /* quitar "Peso estimado 2GB" */
 
-        .cta-box {
-        flex-direction: column;   /* apilar contenido */
+    .cta-box {
+        flex-direction: column;
         padding: 30px 20px;       /* menos padding lateral */
-        gap: 20px;                /* espacio entre elementos */
-        border-radius: 20px;      /* esquinas más suaves */
-        text-align: center;       /* centrar texto y botones */
-        max-width: 95%;           /* no pegarse a los bordes */
-        margin: 0 auto;           /* centrado */
+        gap: 20px;
+        border-radius: 20px;
+        text-align: center;
+        max-width: 95%;
+        margin: 0 auto;
+        word-wrap: break-word;    /* permite cortar palabras largas */
+        overflow-wrap: break-word;/* asegura que el texto no se salga */
     }
 
     .cta-content {
-        max-width: 100%;          /* que el texto ocupe todo el ancho disponible */
+        max-width: 100%;
         margin: 0 auto;
+        font-size: 1rem;          /* tamaño de letra más cómodo */
+        line-height: 1.4;         /* más aire entre líneas */
     }
 
     .cta-actions {
-        flex-direction: column;   /* botones uno debajo del otro */
-        gap: 15px;                /* espacio entre botones */
+        flex-direction: column;
+        gap: 15px;
         width: 100%;
     }
 
     .btn-red, .btn-discord {
-        width: 100%;              /* botones ocupan todo el ancho */
+        width: 100%;
         padding: 15px;
         font-size: 1rem;
     }
