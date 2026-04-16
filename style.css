@@ -213,26 +213,24 @@ h1 { font-size: 6rem; font-weight: 800; line-height: 0.85; margin: 25px 0; lette
     .btn-secondary { display: none; } /* quitar "Peso estimado 2GB" */
     .cta-box {
         flex-direction: column;
-        padding: 25px 15px;       /* menos padding lateral */
-        gap: 20px;
-        border-radius: 20px;
+        width: 100%;            /* ocupa todo el ancho */
+        max-width: none;        /* sin límite artificial */
+        margin: 0;              /* sin centrado forzado */
+        padding: 30px 20px;     /* aire lateral */
+        border-radius: 0;       /* quitar esquinas redondeadas */
+        background: var(--azul);/* color plano de fondo */
         text-align: center;
-        max-width: 95%;
-        margin: 0 auto;
-        word-wrap: break-word;    /* permite cortar palabras largas */
-        overflow-wrap: break-word;
     }
 
     .cta-content h2 {
-        font-size: 1.6rem;        /* tamaño más cómodo en móvil */
-        line-height: 1.3;         /* más aire entre líneas */
+        font-size: 1.6rem;
+        line-height: 1.3;
     }
 
     .cta-content p {
         font-size: 1rem;
         line-height: 1.4;
-        margin: 0 auto;
-        max-width: 100%;          /* que ocupe todo el ancho disponible */
+        margin-bottom: 20px;
     }
 
     .cta-actions {
@@ -246,6 +244,7 @@ h1 { font-size: 6rem; font-weight: 800; line-height: 0.85; margin: 25px 0; lette
         padding: 15px;
         font-size: 1rem;
     }
+}
 
     /* Especificaciones */
     .specs-layout { grid-template-columns: 1fr; text-align: center; gap: 25px; }
