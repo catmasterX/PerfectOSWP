@@ -282,24 +282,40 @@ h1 { font-size: 6rem; font-weight: 800; line-height: 0.85; margin: 25px 0; lette
     .bento-card { margin: 20px auto; padding: 40px; max-width: 95%; }
 
     /* CTA box más equilibrado */
-    .cta-box { 
-        flex-direction: column;       /* apilado vertical */
-        padding: 60px 40px;           /* menos ancho, más aire */
-        gap: 35px; 
-        border-radius: 35px; 
-        text-align: center; 
-        max-width: 90%;               /* no se estira hasta los bordes */
-        margin: 0 auto;               /* centrado */
+    .cta-box {
+        flex-direction: column;     /* apilar contenido */
+        padding: 40px 40px;         /* aire lateral suficiente */
+        gap: 25px;
+        border-radius: 25px;
+        text-align: center;
+        max-width: 90%;             /* no pegarse a los bordes */
+        margin: 0 auto;
     }
 
-    .cta-content { 
-        max-width: 600px; 
-        margin: 0 auto; 
+    .cta-content h2 {
+        font-size: 1.8rem;
+        line-height: 1.3;
     }
 
-    .cta-actions { 
-        align-items: center; 
-        width: 100%; 
+    .cta-content p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 90%;             /* texto con aire lateral */
+    }
+
+    .cta-actions {
+        flex-direction: row;        /* botones en fila */
+        justify-content: center;    /* centrados */
+        gap: 20px;                  /* espacio entre botones */
+        width: 100%;
+    }
+
+    .btn-red, .btn-discord {
+        flex: 1;                    /* que se adapten al espacio */
+        max-width: 250px;           /* límite para no estirarse demasiado */
+        padding: 15px 20px;
+        font-size: 1rem;
     }
 }
 
